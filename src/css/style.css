@@ -140,7 +140,7 @@ header nav {
     padding: 18px 0 64px 0;
 }
 
-.advantage .label {
+.label {
     width: 115px;
     height: 27px;
     margin: 0 auto;
@@ -152,7 +152,7 @@ header nav {
     color: #FFFFFF;
 }
 
-.advantage .title {
+.title {
     font-weight: 700;
     font-size: 38px;
     text-align: center;
