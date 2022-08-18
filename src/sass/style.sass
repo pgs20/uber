@@ -122,23 +122,35 @@ header
     padding: 18px 0 64px 0
 
 .label
-    width: 115px
-    height: 27px
+    position: relative
     margin: 0 auto
-    background: #000000
-    font-weight: 400
-    font-size: 11px
+    height: 24px
+    width: 112px
     padding: 5px 12px
+    background-color: #000000
+    color: #ffffff
+    font-size: 11px
+    font-weight: 300
     text-transform: uppercase
-    color: #FFFFFF
+    text-align: center
+    z-index: 2
+    &_white
+        background-color: #fff
+        color: #000
 
 .title
-    font-weight: 700
-    font-size: 38px
-    text-align: center
-    text-transform: uppercase
-    margin-top: 33px
+    position: relative
+    margin-bottom: 0
+    margin-top: 38px
     color: #222222
+    font-size: 38px
+    line-height: 38px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    z-index: 2
+    &_white
+        color: #fff
 
 .advantage .advantage_block
     display: flex
@@ -171,14 +183,21 @@ header
             line-height: 21px
             color: #202020
 
+.subtitle
+    position: relative
+    margin-top: 19px
+    color: #222222
+    font-size: 17px
+    font-weight: 400
+    text-align: center
+    z-index: 2
+    &_white
+        color: #fff
+
 .mobile
     min-height: 864px
     padding: 46px 0 80px 0
     background: #FFFFFF
-
-    .subtitle
-        text-align: center
-        margin-top: 1px
 
     .row
         display: flex
@@ -223,3 +242,28 @@ header
             background: #000000
             border-radius: 100%
             cursor: pointer
+
+.possibility
+    position: relative
+    min-height: 898px
+    background: #FFFFFF
+
+    &_img
+        position: relative
+        display: block
+        margin: 54px auto 0 auto
+
+    &_text
+        font-weight: 300
+        font-size: 17px
+        text-align: center
+        color: #222222
+
+    .black
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 502px
+        background: #070716
+        padding: 59px 0 137px 0
