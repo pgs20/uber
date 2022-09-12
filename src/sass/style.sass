@@ -1,3 +1,11 @@
+$main-color: #1eacc7
+$second-color: #ff5656
+
+=btn_hover
+    &:hover
+        background-image: none
+        background-color: $main-color
+
 *
     font-family: 'Roboto', sans-serif
 
@@ -15,12 +23,12 @@ header
     margin: 0
     list-style-type: none
 
-    .menu_link
+    &_link
         font-weight: 300
         font-size: 15px
         color: #FFFFFF
 
-    .menu_item
+    &_item
         border-right: 2px dotted #000000
         padding-right: 28px
 
@@ -30,25 +38,25 @@ header
     height: 87px
     background: rgba(0, 0, 0, 0.6)
 
-    .subheader_logo
+    &_logo
         display: block
         max-width: 100%
         margin-top: 17px
 
-    .subheader_official
+    &_official
         font-weight: 400
         font-size: 13px
         color: #FFFFFF
         opacity: 0.6
 
-    .subheader_call
+    &_call
         font-weight: 300
         font-size: 12px
         text-align: right
         color: #FFFFFF
         margin-top: 22px
 
-    .subheader_phone
+    &_phone
         display: block
         font-weight: 400
         font-size: 22px
@@ -58,7 +66,7 @@ header
         margin-top: 8px
         line-height: 12px
 
-    .subheader_btn
+    &_btn
         margin-top: 19px
         width: 172px
         height: 46px
@@ -72,27 +80,28 @@ header
         text-transform: uppercase
         color: #FFFFFF
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+        +btn_hover
 
 .promo
     min-height: 714px
     background: url('../img/bg/uber_bg.jpg') center (center / cover) no-repeat
     padding: 152px 0 185px 0
 
-    .promo_header
+    &_header
         font-weight: 900
         font-size: 60px
         text-align: center
         text-transform: uppercase
         color: #FFFFFF
 
-    .promo_subheader
+    &_subheader
         font-weight: 700
         font-size: 36px
         text-align: center
         text-transform: uppercase
         color: #FFFFFF
 
-    .promo_descr
+    &_descr
         margin-top: 16px
         font-weight: 400
         font-size: 18px
@@ -100,7 +109,7 @@ header
         text-align: center
         color: #FFFFFF
 
-    .promo_btn
+    &_btn
         display: block
         width: 259px
         height: 63px
@@ -116,6 +125,7 @@ header
         text-transform: uppercase
         color: #FFFFFF
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+        +btn_hover
 
 .advantage
     min-height: 849px
@@ -204,7 +214,7 @@ header
         justify-content: space-between
         padding: 32px
 
-    .mobile_item
+    &_item
         position: relative
         width: 320px
         height: 280px
@@ -223,14 +233,14 @@ header
         &_6
             background: url('../img/card/card6.jpg') center center/cover no-repeat
 
-        .mobile_item_subtitle
+        &_subtitle
             font-weight: 400
             font-size: 24px
             text-align: center
             text-transform: uppercase
             color: #FFFFFF
 
-        .mobile_item_plus
+        &_plus
             display: flex
             justify-content: center
             align-items: center
@@ -242,6 +252,26 @@ header
             background: #000000
             border-radius: 100%
             cursor: pointer
+            &:before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $main-color
+                transition: 0.3s all
+            &:after
+                content: ''
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                display: block
+                height: 14px
+                width: 2px
+                background-color: $main-color
+                transition: 0.3s all
+            &:hover
+                &:before, &:after
+                    background-color: $second-color
 
 .possibility
     position: relative
@@ -267,3 +297,45 @@ header
         height: 502px
         background: #070716
         padding: 59px 0 137px 0
+
+.require
+    padding: 68px 0 90px 0
+    &_block
+        margin: 33px 0
+        &_nmb
+            margin-bottom: 0px
+    &_title
+        font-weight: 400
+        font-size: 22px
+        color: #1CA8C3
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 10px
+        li
+            position: relative
+            font-size: 17px
+            font-weight: 300
+            line-height: 24px
+            margin-bottom: 5px
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                left: -31px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url('../icons/check_blue.svg') center center/cover no-repeat
+    &_descr
+        margin-top: 25px
+        font-weight: 300
+        font-size: 17px
+        color: #1CA8C3
+    .warning
+        .require_title
+            color: $second-color
+        .require_list
+            li
+                &:before
+                    background: url('../icons/check_red.svg') center center/cover no-repeat
