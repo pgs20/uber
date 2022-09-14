@@ -31,6 +31,8 @@ header
     &_item
         border-right: 2px dotted #000000
         padding-right: 28px
+        &:last-child
+            border-right: none
 
 .subheader
     position: absolute
@@ -130,6 +132,36 @@ header
 .advantage
     min-height: 849px
     padding: 18px 0 64px 0
+    &_block
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 25px
+
+    &_round
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #1EACC7
+        width: 116px
+        height: 116px
+        border-radius: 100%
+        margin-right: 25px
+
+    &_descr
+        width: 339px
+
+    &_subtitle
+        font-weight: 400
+        font-size: 17px
+        color: #1EACC7
+        line-height: 21px
+
+    &_text
+        font-weight: 300
+        font-size: 15px
+        line-height: 21px
+        color: #202020
 
 .label
     position: relative
@@ -161,37 +193,6 @@ header
     z-index: 2
     &_white
         color: #fff
-
-.advantage .advantage_block
-    display: flex
-    justify-content: center
-    align-items: center
-    margin-top: 25px
-
-    .advantage_round
-        display: flex
-        justify-content: center
-        align-items: center
-        background: #1EACC7
-        width: 116px
-        height: 116px
-        border-radius: 100%
-        margin-right: 25px
-
-    .advantage_descr
-        width: 339px
-
-        .advantage_subtitle
-            font-weight: 400
-            font-size: 17px
-            color: #1EACC7
-            line-height: 21px
-
-        .advantage_text
-            font-weight: 300
-            font-size: 15px
-            line-height: 21px
-            color: #202020
 
 .subtitle
     position: relative
@@ -427,3 +428,5 @@ footer
             margin-top: 19px
             text-transform: uppercase
             text-align: center
+
+@import 'media'
