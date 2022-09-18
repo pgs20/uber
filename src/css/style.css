@@ -725,10 +725,30 @@ footer a:hover {
   .mobile_item_subtitle {
     font-size: 21px;
   }
+  /* line 68, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_wrapper {
+    flex-wrap: wrap;
+  }
+  /* line 70, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /* line 75, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 100%;
+  }
+  /* line 77, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 767px) {
-  /* line 69, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 82, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .menu {
     position: fixed;
     flex-direction: column;
@@ -743,21 +763,21 @@ footer a:hover {
     transition: 0.3s all;
     z-index: 1;
   }
-  /* line 82, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 95, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .menu_active {
     left: 0;
   }
-  /* line 84, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 97, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .menu_item {
     padding-right: 0;
     border: none;
     margin: 10px 0;
   }
-  /* line 88, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 101, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .menu_link {
     font-size: 20px;
   }
-  /* line 90, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 103, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .hamburger {
     display: block;
     position: absolute;
@@ -767,7 +787,7 @@ footer a:hover {
     width: 25px;
     height: 12px;
   }
-  /* line 98, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 111, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .hamburger span {
     display: block;
     width: 100%;
@@ -776,27 +796,27 @@ footer a:hover {
     background-color: #fff;
     transition: 0.5s all;
   }
-  /* line 107, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 120, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .hamburger_active span:nth-child(1) {
     transform: rotate(-45deg) translateY(3px);
   }
-  /* line 109, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 122, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .hamburger_active span:nth-child(2) {
     display: none;
   }
-  /* line 111, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 124, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .hamburger_active span:nth-child(3) {
     transform: rotate(45deg) translateY(-3px);
   }
-  /* line 113, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 126, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .xs-hidden {
     display: none;
   }
-  /* line 115, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 128, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .xs-visible {
     display: block;
   }
-  /* line 118, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 131, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .subheader_phone {
     display: block;
     margin-top: 10px;
@@ -806,7 +826,7 @@ footer a:hover {
     text-transform: uppercase;
     text-align: center;
   }
-  /* line 126, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 139, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .subheader_btn {
     display: block;
     width: 200px;
@@ -814,13 +834,60 @@ footer a:hover {
     margin: 0 auto;
     margin-top: 10px;
   }
-  /* line 133, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 146, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .promo_header {
     line-height: 45px;
   }
-  /* line 136, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  /* line 149, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .possibility_img {
     width: 100%;
+  }
+  /* line 152, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_divider {
+    width: 253px;
+    margin: 0 auto;
+  }
+  /* line 155, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_wrapper {
+    padding-top: 22px;
+  }
+  /* line 157, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_wrapper > div {
+    margin-bottom: 20px;
+  }
+  /* line 159, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    order: 2;
+  }
+  /* line 161, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(2) {
+    order: 1;
+  }
+  /* line 163, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    order: 3;
+  }
+  /* line 165, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_links {
+    width: 290px;
+  }
+  /* line 167, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_links_main {
+    padding: 0;
+    font-size: 14px;
+  }
+  /* line 170, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_links_sub {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 173, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_links_sub a {
+    margin: 0 7px;
+  }
+  /* line 175, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .footer_links_lang {
+    margin-top: 10px;
   }
 }
 
