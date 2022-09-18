@@ -620,6 +620,11 @@ footer a:hover {
   text-align: center;
 }
 
+/* line 434, ../../../ProgrammingWork/course-html-css/uber/src/sass/style.sass */
+.xs-visible {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   /* line 3, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .menu_item {
@@ -782,6 +787,40 @@ footer a:hover {
   /* line 111, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
   .hamburger_active span:nth-child(3) {
     transform: rotate(45deg) translateY(-3px);
+  }
+  /* line 113, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 115, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 118, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 126, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  /* line 133, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .promo_header {
+    line-height: 45px;
+  }
+  /* line 136, ../../../ProgrammingWork/course-html-css/uber/src/sass/_media.sass */
+  .possibility_img {
+    width: 100%;
   }
 }
 
