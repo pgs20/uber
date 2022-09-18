@@ -12,17 +12,21 @@
             align-items: flex-start
         &_descr
             width: 300px
-    .mobile
-        &_item
-            width: 270px
-            &_plus
-                left: 120px
     .footer
-        &_links
-            margin: 0 -14%
+        &_wrapper > div
+            width: 50%
+            &:nth-child(1)
+                width: 25%
+            &:nth-child(3)
+                width: 25%
+                display: flex
+                justify-content: flex-end
         &_mobile
             display: flex
-            flex-direction: column
+            a
+                margin: 0 3px
+                img
+                    width: 100%
 
 @media (max-width: 991px)
     .menu
